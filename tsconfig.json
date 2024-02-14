@@ -25,10 +25,10 @@
         "libs/bootcamp-entity/src/*"
       ],
       "@app/common": [
-        "libs/common/src"
+        "apps/common/src"
       ],
       "@app/common/*": [
-        "libs/common/src/*"
+        "apps/common/src/*"
       ]
     }
   }
