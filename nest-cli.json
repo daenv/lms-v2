@@ -29,8 +29,8 @@
       }
     },
     "common": {
-      "type": "library",
-      "root": "libs/common",
+      "type": "application",
+      "root": "apps/common",
       "entryFile": "index",
       "sourceRoot": "libs/common/src",
       "compilerOptions": {
