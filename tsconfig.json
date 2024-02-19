@@ -29,6 +29,12 @@
       ],
       "@app/common/*": [
         "apps/common/src/*"
+      ],
+      "@app/bootcamp-data": [
+        "libs/bootcamp-data/src"
+      ],
+      "@app/bootcamp-data/*": [
+        "libs/bootcamp-data/src/*"
       ]
     }
   }
