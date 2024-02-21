@@ -6,8 +6,5 @@ import { CreateAccountsDto } from './dtos';
 export class AccountsController {
   constructor() {}
 
-  // @Post()
-  // public async createAccount(@Body() createAccountDto: CreateAccountsDto) {
-  //   return this.accountsService.createAccounts(createAccountDto);
-  // }
+  
 }
