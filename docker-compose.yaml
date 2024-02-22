@@ -3,10 +3,11 @@ services:
   postgres:
     container_name: postgres
     image: postgres:latest
+    hostname: postgres_docker
     ports:
-    - "5432:5432"
+    - "5433:5432"
     volumes:
-    - /data/postgres:/var/lib/postgresql/data
+    - /Users/daenvle/Workspaces/project_nest/ka-lmslab
     env_file:
     - docker.env
     networks:
@@ -20,7 +21,7 @@ services:
     ports:
     - "8080:80"
     volumes:
-    - /data/pgadmin:/var/lib/pgadmin
+    - /Users/daenvle/Workspaces/project_nest/ka-lmslab
     env_file:
     - docker.env
     networks:
