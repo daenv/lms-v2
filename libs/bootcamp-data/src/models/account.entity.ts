@@ -46,7 +46,7 @@ export class AccountEntity extends IdEntity implements IAccountEntity {
   @Column({
     type: 'varchar',
     nullable: true,
-    default: () => 'LOCATIONTIMESTAMP',
+    // default: () => 'LOCATIONTIMESTAMP',
   })
   verificationExpires: Date;
 
@@ -56,7 +56,7 @@ export class AccountEntity extends IdEntity implements IAccountEntity {
   @Column({
     type: 'timestamp',
     nullable: true,
-    default: () => 'LOCATIONTIMESTAMP',
+    // default: () => 'LOCATIONTIMESTAMP',
   })
   blockExpires?: Date;
 
