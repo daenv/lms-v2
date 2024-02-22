@@ -28,15 +28,6 @@
         "tsConfigPath": "libs/bootcamp-entity/tsconfig.lib.json"
       }
     },
-    "common": {
-      "type": "application",
-      "root": "apps/common",
-      "entryFile": "index",
-      "sourceRoot": "libs/common/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/common/tsconfig.lib.json"
-      }
-    },
     "bootcamp-data": {
       "type": "library",
       "root": "libs/bootcamp-data",
@@ -53,6 +44,15 @@
       "sourceRoot": "libs/bootcamp-businesslogic/src",
       "compilerOptions": {
         "tsConfigPath": "libs/bootcamp-businesslogic/tsconfig.lib.json"
+      }
+    },
+    "common": {
+      "type": "library",
+      "root": "libs/common",
+      "entryFile": "index",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
       }
     }
   }
