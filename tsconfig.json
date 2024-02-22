@@ -24,12 +24,6 @@
       "@app/bootcamp-entity/*": [
         "libs/bootcamp-entity/src/*"
       ],
-      "@app/common": [
-        "apps/common/src"
-      ],
-      "@app/common/*": [
-        "apps/common/src/*"
-      ],
       "@app/bootcamp-data": [
         "libs/bootcamp-data/src"
       ],
@@ -41,6 +35,12 @@
       ],
       "@app/bootcamp-businesslogic/*": [
         "libs/bootcamp-businesslogic/src/*"
+      ],
+      "@app/common": [
+        "libs/common/src"
+      ],
+      "@app/common/*": [
+        "libs/common/src/*"
       ]
     }
   }
