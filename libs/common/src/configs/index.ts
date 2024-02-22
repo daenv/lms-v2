@@ -1,2 +1,2 @@
 export * from './interface';
-export * from './database.config';
+export * from './config.service';
