@@ -5,6 +5,4 @@ import { CreateAccountsDto } from './dtos';
 @Controller()
 export class AccountsController {
   constructor() {}
-
-  
 }
