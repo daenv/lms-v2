@@ -59,4 +59,12 @@ export class AccountEntity extends IdEntity implements IAccountEntity {
     default: () => 'LOCATIONTIMESTAMP',
   })
   blockExpires?: Date;
+
+  @Column({
+    type: 'varchar',
+    array: true,
+    nullable: false,
+    default: '{"user"}',
+  })
+  roles: string[];
 }
