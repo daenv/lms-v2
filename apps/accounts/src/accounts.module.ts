@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
 import { AccountsController } from './accounts.controller';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { configService } from '@app/common/configs';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(configService.getTypeOrmConfig())],
+  imports: [ConfigModule.forRoot()],
   controllers: [AccountsController],
   // providers: [AccountsService],
 })
