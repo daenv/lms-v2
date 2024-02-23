@@ -10,15 +10,6 @@
   "monorepo": true,
   "root": "apps/accounts",
   "projects": {
-    "accounts": {
-      "type": "application",
-      "root": "apps/accounts",
-      "entryFile": "main",
-      "sourceRoot": "apps/accounts/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/accounts/tsconfig.app.json"
-      }
-    },
     "bootcamp-entity": {
       "type": "library",
       "root": "libs/bootcamp-entity",
@@ -53,6 +44,15 @@
       "sourceRoot": "libs/common/src",
       "compilerOptions": {
         "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "accounts": {
+      "type": "application",
+      "root": "apps/accounts",
+      "entryFile": "main",
+      "sourceRoot": "apps/accounts/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/accounts/tsconfig.app.json"
       }
     }
   }
