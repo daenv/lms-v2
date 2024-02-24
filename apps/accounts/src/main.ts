@@ -1,30 +1,21 @@
 import { NestFactory } from '@nestjs/core';
 import { AccountsModule } from './accounts.module';
-import * as cookieSession from 'cookie-session';
+import { useContainer } from 'class-validator';
+import * as passport from 'passport';
 import { ValidationPipe } from '@nestjs/common';
-
+import * as bodyParser from 'body-parser';
 async function bootstrap() {
   const app = await NestFactory.create(AccountsModule);
-  app.use(
-    cookieSession({
-      keys: ['asdasdasdsa'],
-    }),
-  );
-  app.useGlobalPipes(
-    new ValidationPipe({
-      whitelist: true,
-    }),
-  );
+  useContainer(app, { fallbackOnErrors: true });
+  app.enableCors();
+  app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
+  app.use(bodyParser.json()); // parse application/json
+  app.use(bodyParser.urlencoded({ extended: true }));
 
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
+  app.use(passport.initialize());
 
-  (app as any).set('etag', false);
-  app.use((req, res, next) => {
-    res.removeHeader('x-powered-by');
-    res.removeHeader('date');
-    next();
-  });
   const port = process.env.PORT || 3333;
   await app.listen(port, () => {
     console.log('Listening at http://localhost:' + port + '/' + globalPrefix);
