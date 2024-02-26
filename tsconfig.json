@@ -41,6 +41,12 @@
       ],
       "@app/common/*": [
         "libs/common/src/*"
+      ],
+      "@app/bootcamp-common": [
+        "libs/bootcamp-common/src"
+      ],
+      "@app/bootcamp-common/*": [
+        "libs/bootcamp-common/src/*"
       ]
     }
   }
